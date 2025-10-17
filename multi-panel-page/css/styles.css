@@ -1,0 +1,157 @@
+body {
+  font-family: "Archivo Narrow", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  }
+
+
+h1 {
+  margin: 0;
+  font-size: 80px;
+  line-height: 1;
+}
+
+h2 {
+  margin: 0;
+  font-size: 30px;
+  margin-top: 16px;
+  line-height: 1;
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
+  padding-top: 49px;
+  padding-bottom: 13px;
+  font-size: 40px;
+}
+
+
+
+.two-boats {
+  float: right;       
+  width: 400px;
+  height: 300px;
+  padding-top: 19px;
+  padding-bottom: 30px;
+  margin-left: 43px;
+}
+.intro p {
+  line-height: 1.4;
+}
+
+
+header {
+  text-align: center;
+  background-color: rgba(255,0,0,0.3);
+  background-image: url("../images/purple-sunset.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 166px;
+  padding-bottom: 180px;
+  color: white;
+  text-shadow:0px 1px 4px rgba(0,0,0,0.7);
+}
+
+section > div{
+ width: 960px;
+ height: 725px;
+ margin: auto;
+}
+
+section.intro {
+  background-color: lightsalmon;
+}
+
+section.intro img{
+
+}
+
+h4 {
+  margin: 0;
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 13px;
+  font-size: 40px;
+}
+
+section > div1{
+ width: 960px;
+ height: 700px;
+ margin: auto;
+}
+
+#photo-section {
+  width: 960px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  list-style: none;
+}
+
+#photo-section li {
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.photo {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 12px;
+  float: left;
+}
+
+#photo-section h4 {
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+#photo-section p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 7px 0 0 0;
+}
+
+.grid h3,
+.grid .section-title {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 42px;
+  padding-bottom: 31px;
+  margin: 0;
+  
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 37px 0;
+  box-sizing: border-box;
+}
+
+.footer-box {
+  max-width: 2000px; 
+  margin: 0 auto;
+  padding-bottom: 100px; 
+  background-color: lightsalmon
+}
+
+
+footer .section-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 26px;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 710px;
+}

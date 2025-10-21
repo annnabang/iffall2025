@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff7eb;
+  color: #111;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  color: #d62828;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff7eb;
+  background: url('../images/kimchi-jjigae.png') no-repeat center center;
+  background-size: 100%;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: 1;
+}
+
+.hero-content {
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 90px;
+  font-weight: 900;
+  text-shadow: 0 5px 20px rgba(0,0,0,0.6);
+}
+
+.hero-content p {
+  font-size: 23px;
+  margin-top: 0px;
+  text-shadow: 0 5px 20px rgba(0,0,0,0.6);
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.intro .text { flex: 1 1 480px; }
+
+.intro h2 { color: #d62828; font-size: 40px; margin-bottom: 20px; }
+
+.intro p { font-size: 18px; margin-bottom: 20px; }
+
+.info p { font-size: 16px; color: #333; }
+
+.intro .image { flex: 1 1 400px; }
+
+.intro img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.ingredients {
+  background-color: #d62828;
+  color: #fff7eb;
+  padding: 80px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.ingredients h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.ingredients ul {
+  flex: 1 1 400px;
+  max-width: 380px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  list-style-type: disc;
+}
+
+.ingredients img {
+  flex: 1 1 400px;
+  max-width: 650px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+
+.instructions {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.instructions h2 { text-align:center; font-size:42px; color:#000; margin-bottom:60px; }
+
+.instructions ol { list-style-position: outside; font-size:18px; color:#222; }
+
+.instructions li { margin-bottom: 20px; }
+
+.instructions img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 20px auto 50px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.source { text-align:center; max-width:800px; margin:0 auto 100px; padding:0 20px; color:#333; font-size:16px; }
+
+footer {
+  background-color: #d62828;
+  color: #fff7eb;
+  text-align:center;
+  padding:40px 20px;
+  font-size:16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .ingredients img,
+  .instructions img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .ingredients img,
+  .instructions img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ingredients img,
+  .instructions img {
+    max-width: 100%;
+  }
+  
+  .ingredients {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ingredients ul {
+    max-width: 100%;
+    text-align: left;
+  }
+}

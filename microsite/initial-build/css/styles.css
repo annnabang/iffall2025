@@ -1,0 +1,166 @@
+body {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+
+  background: url('../images/coral-background.png') no-repeat center top;
+  background-size: cover;       
+  color: white;                
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgba(173, 216, 230,0.6); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  border-bottom: 2px solid #034f84;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.hero {
+  width: 100%;
+  min-height: 120vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 100px;
+  text-shadow: 0px 1px 4px rgba(0,0,0,0.7);
+}
+
+section, .footer-box {
+  background: none;    
+  padding: 120px 20px;  
+  margin: 0 auto;
+  max-width: 960px;
+  border-radius: 0;
+}
+
+
+h2, h3, .section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px; 
+  text-shadow: 0px 1px 4px rgba(0,0,0,0.7);
+}
+
+#human-impact p {
+  color: darkblue;
+}
+
+#biodiversity p {
+  color: darkblue;
+}
+
+.intro img.bio {
+  float: right;
+  width: 400px;
+  height: 300px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+#photo-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  max-width: 960px;
+  margin: auto;
+}
+
+#photo-section li {
+  background: none;  
+  padding: 0;
+  color: darkblue;
+}
+
+.photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.photo-title {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #ffe97f;   
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
+
+#call-to-action {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: left;   
+}
+
+#call-to-action h5, { 
+  text-align: left;
+  margin-bottom: 10px;
+  color: #ffe97f;
+  font-size: 26px;
+}
+
+#call-to-action h4 {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #ffe97f;
+  font-size: 26px;
+}
+
+
+@media (max-width: 1024px) {
+  #photo-section {
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .intro img.two-boats {
+    float: none;
+    display: block;
+    margin: 20px auto;
+  }
+
+  #photo-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+}

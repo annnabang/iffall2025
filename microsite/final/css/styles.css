@@ -30,13 +30,15 @@ html, body {
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: rgba(173, 216, 230,0.6); 
+  left: 0;
+  width: 100%;
+  background-color: rgba(173, 216, 230, 0.6);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 10px 50px;
   z-index: 1000;
 }
 
@@ -84,7 +86,7 @@ html, body {
   justify-content: flex-start;
   text-align: center;
   padding: 140px 0 40px;
-  margin: -100px 0 0 0;
+  margin: 0;
   text-shadow: 7px 7px 7px rgba(0,0,0,0.7);
   gap: 40px;
 }

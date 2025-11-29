@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #222;
+}
+
+.page-header {
+  text-align: left;
+  padding-left: 110px;
+  margin-bottom: 32px;
+}
+
+.button-grid {
+  max-width: 1400px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.button-card {
+  background: #ffffff;
+  border-radius: 0px;
+  border: 1px solid #dddddd;
+  width: 260px;
+  height: 260px;
+  padding: 45px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+}
+
+.logo-btn {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-mark {
+  width: 220px;       
+  height: 220px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 0;
+  transition: all 0.35s ease;
+  box-shadow: none;
+  background: transparent;
+}
+
+.logo-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
+
+.logo-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.logo-btn:active .logo-mark {
+  transform: translateY(2px) scale(0.96);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+.coca .logo-mark {
+  background: white; 
+  box-shadow: none; 
+}
+
+@keyframes coca-wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.coca:hover .logo-mark {
+  animation: coca-wiggle 0.4s ease-in-out;
+  filter: brightness(1.1);
+}
+
+.apple .logo-mark {
+  width: auto;
+  height: auto;
+  padding: 4px 10px;
+  border-radius: 0; 
+  background: transparent;
+  box-shadow: none; 
+  color: #111;
+  font-size: 42px;
+}
+
+.apple:hover .logo-mark {
+  transform: scale(1.1);
+  background: white;
+  color: black;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.4);
+}
+
+.ibm .logo-mark {
+  width: 140px;
+  height: 80px;
+  border-radius: 8px;
+  background: repeating-linear-gradient(
+    to bottom,
+    white,
+    #0033a0 8px,
+    white 8px,
+    white 12px
+  );
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0.18em;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+.ibm:hover .logo-mark {
+  transform: translateX(6px);
+  filter: brightness(1.1);
+}
+
+.oldnavy .logo-mark img {
+  width: 130px; 
+  height: auto;
+}
+
+@keyframes oldnavy-bounce {
+  0%   { transform: translateY(0); }
+  35%  { transform: translateY(-10px); }
+  60%  { transform: translateY(4px); }
+  100% { transform: translateY(0); }
+}
+
+.oldnavy:hover .logo-mark {
+  animation: oldnavy-bounce 0.4s ease-out;
+}
+
+.harley .logo-mark {
+  background: white;
+  border: 2px solid #f28c28;
+  color: #f28c28;
+  transform-style: preserve-3d;
+}
+
+.harley:hover .logo-mark {
+  transform: rotateY(180deg);
+}
+
+.mkors .logo-mark {
+  background: white;
+  color: white;
+  border: 1px solid #d2b48c;
+}
+
+@keyframes mkors-glow {
+  0% { box-shadow: 0 8px 18px rgba(0,0,0,0.2); }
+  50% { box-shadow: 0 0 25px rgba(210,180,140,0.9); }
+  100% { box-shadow: 0 8px 18px rgba(0,0,0,0.2); }
+}
+
+.mkors:hover .logo-mark {
+  animation: mkors-glow 0.6s ease-in-out;
+}
+
+.ideo .logo-mark {
+  background: white;
+  border: 3px solid #ff6f3c;
+}
+
+@keyframes ideo-bounce {
+  0% { transform: translateY(0); }
+  35% { transform: translateY(-12px); }
+  60% { transform: translateY(4px); }
+  100% { transform: translateY(0); }
+}
+
+.ideo:hover .logo-mark {
+  animation: ideo-bounce 0.45s ease-out;
+}
+
+.nbc .logo-mark img {
+  width: 130px; 
+  height: auto;
+}
+
+.nbc:hover .logo-mark {
+  transform: scale(1.1) rotate(8deg);
+  filter: brightness(1.15);
+}
+
+.cartoon .logo-mark {
+  background: white;
+  color: black;
+  border: 4px solid black;
+  box-shadow: 6px 6px 0 black;
+  border-radius: 20%;
+}
+
+.cartoon:hover .logo-mark {
+  transform: translate(-4px, -4px) scale(1.1, 0.9);
+  box-shadow: 10px 10px 0 black;
+}
+
+.tesla .logo-mark {
+  background: white;
+  border: 1px solid #c41e1e;
+}
+
+.tesla:hover .logo-mark {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(255, 45, 45, 0.9);
+  border-color: #ff2d2d;
+}
